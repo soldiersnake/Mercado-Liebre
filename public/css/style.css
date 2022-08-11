@@ -1,0 +1,40 @@
+body{
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style:none;
+    font-weight: bold;
+}
+
+p{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuentoDescripcion{
+    font-size: 16px;
+}
+
+#margen{
+    margin-bottom: 15px;
+}
+
+.ajuste{
+    color:white;
+    background-color: #03264C;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
