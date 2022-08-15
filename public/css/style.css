@@ -29,12 +29,26 @@ p{
     margin-bottom: 15px;
 }
 
-.burguer-menu{
-    color:white;
+.color-icono{
     background-color: #03264C;
-    padding: 5px;
-    display: inline;
-    align-items: center;
+    color: #03264C;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    padding: 10px;
+    margin: 10px;   
+}
+
+.burguer-menu{
+    background-color: #03264C;
+    color:white;
+    display: block;
+    text-align: center;
+    max-width: 50px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin: auto;
+    padding: 10px 0;
 }
 
 .alineacion{
