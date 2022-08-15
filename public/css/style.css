@@ -29,12 +29,15 @@ p{
     margin-bottom: 15px;
 }
 
-.ajuste{
+.burguer-menu{
     color:white;
     background-color: #03264C;
     padding: 5px;
-    display: flex;
+    display: inline;
     align-items: center;
-    justify-content: center;
+}
+
+.alineacion{
+    display: inline-flex;
 }
 
