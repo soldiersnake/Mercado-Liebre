@@ -1,3 +1,9 @@
+* {
+    margin: 0 px ;
+    padding: 0 px ;
+    box-sizing: border-box ;
+    }
+
 body{
     background-color: #EAC926;
     font-family: 'Roboto', sans-serif;
@@ -87,13 +93,45 @@ p{
 }
 
 .seccion-main-card{
+    display: block;
     text-align: center;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     background-color: #ebebeb;
-    width: 50%;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid #ebebeb;
+}
+
+.seccion-main-card img{
+    width: 70%;
+}
+
+.seccion-main-card-item{
+    background-color: white;
+    text-align: left;
+    width: 70%;
+    border-top: #ebebeb solid 1px;
+    margin: auto;
+}
+
+.circulo{
+    border-radius: 50%;
+    border: 1px solid green;
+    width: 40px;
+    height: 40px;
+}
+
+.fa, .fas{
+    font-weight: 900;
+    color: green;
+    padding-top: 10px;
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
 }
 
 .truck{
@@ -152,3 +190,17 @@ p{
         margin: 0;
     }
 }
+
+/* seccion-main-card-item i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+} */
