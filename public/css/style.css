@@ -36,6 +36,11 @@ p{
 
 .descuentoDescripcion{
     font-size: 16px;
+    color: green;
+}
+
+.Descripcion{
+    color: rgb(33, 33, 33);
 }
 
 .color-icono{
