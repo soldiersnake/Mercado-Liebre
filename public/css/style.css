@@ -21,6 +21,16 @@ body{
     text-align: center;
 }
 
+.busqueda-bar{
+    display: block;
+    max-width: 50%;
+    align-items: flex-end;
+}
+
+.busqueda-bar input{
+    border-radius: 8px;
+}
+
 p{
     font-weight: bold;
     font-size: 12px;
@@ -130,7 +140,6 @@ p{
 
 .fa, .fas{
     font-weight: 900;
-    color: green;
     padding-top: 10px;
     text-align: center;
 }
@@ -143,11 +152,19 @@ ul li{
     color: greenyellow;
 }
 
-
+@media (max-width:767px){
+    .busqueda-bar{
+        display: flex;
+    }
+}
 @media (min-width: 768px){
+    .busqueda-bar{
+        display: flex;
+    }
     .main-header-top-bar{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     .copy-header{
         max-width: 350px;
@@ -209,3 +226,18 @@ ul li{
     right: 20px;
     top: -15px;
 } */
+
+.formulario{
+    background-color: #ebebeb;
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+}
+
+.botonFormulario{
+    padding: 5px;
+    margin: 5px;
+    width: 30%;
+    background-color: rgba(18, 90, 198, 0.777);
+    border-radius: 5px;
+}
