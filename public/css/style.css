@@ -8,12 +8,27 @@ body{
     background-color: #EAC926;
     font-family: 'Roboto', sans-serif;
 }
+
+.logo{
+    width: 100%;
+}
+
+.main-header-top-bar a{
+    width: 100%;
+}
+
+.main-header-top-bar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .main-header{
     padding: 20px;
 }
 
-.logo{
-    width: 200px;
+.logo-liebre{
+    width: 100%;
 }
 
 .copy-header{
@@ -23,12 +38,24 @@ body{
 
 .busqueda-bar{
     display: block;
-    max-width: 50%;
+    width: 100%;
     align-items: flex-end;
 }
 
 .busqueda-bar input{
     border-radius: 8px;
+    width: 90%;
+    border: none;
+    height: 30px;
+}
+
+.busqueda-bar button{
+    outline: none;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
 }
 
 p{
@@ -95,6 +122,9 @@ p{
 
 .alineacion{
     display: inline-flex;
+    position: relative;
+    bottom: 3px;
+    left: 3px;
 }
 
 .seccion-main{
@@ -105,6 +135,9 @@ p{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    display: block;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .seccion-main-card{
@@ -113,14 +146,16 @@ p{
     padding: 10px;
     margin: 10px;
     background-color: #ebebeb;
-    width: 45%;
+    width: 35%;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #ebebeb;
+    border-radius: 5px;
 }
 
 .seccion-main-card img{
     width: 70%;
+    border-radius: 5px;
 }
 
 .seccion-main-card-item{
@@ -129,6 +164,7 @@ p{
     width: 70%;
     border-top: #ebebeb solid 1px;
     margin: auto;
+    border-radius: 5px;
 }
 
 .circulo{
@@ -152,23 +188,39 @@ ul li{
     color: greenyellow;
 }
 
+.wrap-visit{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap-offer{
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width:767px){
     .busqueda-bar{
         display: flex;
     }
 }
 @media (min-width: 768px){
+    .logo-liebre{
+        width: 33%;
+    }
     .busqueda-bar{
         display: flex;
+        width: 33%;
     }
     .main-header-top-bar{
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
     .copy-header{
         max-width: 350px;
         text-align: right;
+        width: 33%;
     }
     .burguer-button{
         display: none;
@@ -183,11 +235,29 @@ ul li{
     .main-navbar li{
         margin: 0 5px;
     }
+    .wrap-visit{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .wrap-offer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .seccion-main-card{
+        width: 45%;
+    }    
 }
 
 @media (min-width: 1200px){
     .logo{
         width: 250px;
+    }
+    .logo-liebre{
+        width: 33%;
     }
     .main-header-top-bar, .main-navbar{
         max-width: 1200px;
@@ -210,6 +280,23 @@ ul li{
         font-size: 18px;
         font-weight: 400;
         margin: 0;
+        width: 33%;
+    }
+    .wrap-visit{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .wrap-offer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .seccion-main-card{
+        width: 23%;
+        margin: 0.5rem;
     }
 }
 
