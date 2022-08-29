@@ -61,6 +61,7 @@ body{
 p{
     font-weight: bold;
     font-size: 12px;
+    
 }
 
 .titulares{
@@ -91,7 +92,7 @@ p{
 }
 
 .burguer-button{
-    background-color: #03264C;
+    background-color: #1259c3;
     color:white;
     display: block;
     text-align: center;
@@ -196,6 +197,13 @@ ul li{
 .wrap-offer{
     display: flex;
     flex-direction: column;
+}
+
+.blue{
+    color: #1259c3;
+    size: 2em;
+    margin-bottom: 10px;
+    
 }
 
 @media (max-width:767px){
