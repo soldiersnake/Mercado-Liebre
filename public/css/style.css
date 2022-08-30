@@ -70,7 +70,9 @@ p{
 
 .precio{
     font-size: 18px;
+    margin-right: 10px;
 }
+
 
 .descuentoDescripcion{
     font-size: 16px;
@@ -79,6 +81,7 @@ p{
 
 .Descripcion{
     color: rgb(33, 33, 33);
+    display: none;
 }
 
 .color-icono{
@@ -146,26 +149,29 @@ p{
     text-align: center;
     padding: 10px;
     margin: 10px;
-    background-color: #ebebeb;
+    background-color: white;
     width: 35%;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #ebebeb;
     border-radius: 5px;
+    box-shadow: none;
 }
 
 .seccion-main-card img{
     width: 70%;
     border-radius: 5px;
+    
 }
 
 .seccion-main-card-item{
     background-color: white;
     text-align: left;
-    width: 70%;
+    width: 100%;
     border-top: #ebebeb solid 1px;
     margin: auto;
     border-radius: 5px;
+    position: relative;
 }
 
 .circulo{
@@ -173,6 +179,10 @@ p{
     border: 1px solid green;
     width: 40px;
     height: 40px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: white;
 }
 
 .fa, .fas{
@@ -205,6 +215,7 @@ ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .blue{
@@ -213,12 +224,17 @@ ul li{
     margin-bottom: 10px;
 }
 
+@media (max-width:361px){
+
+}
+
 @media (max-width:767px){
     .busqueda-bar{
         display: flex;
     }
+    
 }
-@media (min-width: 768px){
+@media (min-width: 769px){
     .logo-liebre{
         width: 33%;
     }
@@ -265,6 +281,26 @@ ul li{
     .seccion-main-card{
         width: 45%;
     }    
+
+    .seccion-main-card{
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
+
+    .Descripcion{
+        color: rgb(33, 33, 33);
+        display: block;
+        margin-top: 0%;
+        font-size: 15px;
+    }
+
+    .precioDescuento{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: 0;
+        height: 3%;
+    }
+
 }
 
 @media (min-width: 1200px){
