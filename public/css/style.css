@@ -199,11 +199,18 @@ ul li{
     flex-direction: column;
 }
 
+.contenedor-footer{
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .blue{
     color: #1259c3;
     size: 2em;
     margin-bottom: 10px;
-    
 }
 
 @media (max-width:767px){
