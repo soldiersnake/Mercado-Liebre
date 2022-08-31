@@ -207,6 +207,13 @@ ul li{
     color: greenyellow;
 }
 
+.truck:hover{
+    animation-name: moverCamion;
+    animation-direction: alternate;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+}
+
 .wrap-visit{
     display: flex;
     flex-direction: column;
@@ -222,7 +229,7 @@ ul li{
 }
 
 .contenedor-footer{
-    background-color: #ebebeb;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,6 +241,13 @@ ul li{
     color: #1259c3;
     size: 2em;
     margin-bottom: 10px;
+}
+.blue:hover{
+    color: yellow;
+    animation-name: IconoFooter;
+    animation-direction: alternate;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
 }
 
 @media (max-width:361px){
@@ -412,4 +426,19 @@ ul li{
 #boton-enviar{
     margin-bottom: 5%;
     padding: 5px;
+}
+
+@keyframes moverCamion{
+    0%{
+    }
+
+    100%{
+        transform: rotateZ(-90deg);
+    }
+}
+
+@keyframes IconoFooter{
+    100%{
+        color: #EAC926;
+    }
 }
