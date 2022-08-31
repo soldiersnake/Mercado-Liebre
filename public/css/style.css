@@ -250,6 +250,11 @@ ul li{
     animation-iteration-count: infinite;
 }
 
+.items-footer{
+    display: flex;
+    margin-top: 15px;
+}
+
 @media (max-width:361px){
 
 }
