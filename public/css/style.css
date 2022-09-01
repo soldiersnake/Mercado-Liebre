@@ -7,6 +7,14 @@
 body{
     background-color: #EAC926;
     font-family: 'Roboto', sans-serif;
+    /* display: flex;
+    justify-content: space-between;
+    flex-direction: column; */
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+
 }
 
 .logo{
@@ -15,6 +23,7 @@ body{
 
 .main-header{
     border-bottom: 1px solid #ebebeb;
+    width: 100%;
 }
 
 .main-header-top-bar a{
@@ -235,6 +244,9 @@ ul li{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .blue{
@@ -399,6 +411,7 @@ ul li{
 .contenedor-formulario{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .formulario{
